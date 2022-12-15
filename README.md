@@ -5,4 +5,4 @@
 2. Clear text field after a comment is made
 3. Option to add an "uploaded by" field where others who have uploaded quotes can log their contribution
 4. Uploaded by info will be shown on a seperate page with a link to access at the bottom of page
-5. Deploy this app for production
+5. Deploy this app for production (https://multipage-quote-app-fdaaa.web.app)
