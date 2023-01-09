@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useHistory } from "react-router-dom";
 
 import QuoteForm from "../components/quotes/QuoteForm";
@@ -20,7 +21,16 @@ const NewQuote = () => {
   };
 
   return (
-    <QuoteForm isLoading={status === "pending"} onAddQuote={addQuoteHandler} />
+    <>
+    <Helmet>
+      <title>Add a New Quote</title>
+      <meta name="description" content="Add a new funny, serious, or thought-provoking quote to the page" />
+    </Helmet>
+      <QuoteForm
+        isLoading={status === "pending"}
+        onAddQuote={addQuoteHandler}
+      />
+    </>
   );
 };
 

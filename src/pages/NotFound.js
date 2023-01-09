@@ -1,8 +1,16 @@
+import { Helmet } from "react-helmet";
+
 const NotFound = () => {
   return (
-    <div className="centered">
-      <p>Page Not Found!</p>
-    </div>
+    <>
+    <Helmet>
+      <title>Page Not Found!</title>
+      <meta name="description" content="Error page" />
+    </Helmet>
+      <div className="centered">
+        <p>Oops! Page Not Found!</p>
+      </div>
+    </>
   );
 };
 

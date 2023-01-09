@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import QuoteList from "../components/quotes/QuoteList";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
@@ -44,7 +45,15 @@ const AllQuotes = () => {
     return <NoQuotesFound />;
   }
 
-  return <QuoteList quotes={loadedQuotes} />;
+  return (
+  <>
+  <Helmet>
+    <title>View All Quotes</title>
+    <meta name="description" content="A list of funny, serious, and thought-provoking quotes" />
+  </Helmet>
+  <QuoteList quotes={loadedQuotes} />
+  </>
+  );
 };
 
 export default AllQuotes;

@@ -1,11 +1,13 @@
 import { Fragment, useEffect } from "react";
 import { useParams, Route, Link, useRouteMatch } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Comments from "../components/comments/Comments";
 import HighlightedQuote from "../components/quotes/HighlightedQuote";
 import useHttp from "../hooks/use-http";
 import { getSingleQuote } from "../lib/api";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
+
 
 /*
 const DUMMY_QUOTES = [
@@ -53,7 +55,11 @@ const QuoteDetails = () => {
   }
 
   return (
-    <Fragment>
+    <>
+    <Helmet>
+      <title>View Quote and Comments</title>
+      <meta name="description" content="View selected quote, add and view comments" />
+    </Helmet>
       <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} />
       <Route path={match.path} exact>
         <div className="centered">
@@ -65,7 +71,7 @@ const QuoteDetails = () => {
       <Route path={`${match.path}/comments`}>
         <Comments />
       </Route>
-    </Fragment>
+    </>
   );
 };
 
