@@ -19,6 +19,10 @@ const QuoteForm = (props) => {
     // optional: Could validate here
 
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
+
+    //clear form after submission
+    authorInputRef.current.value = '';
+    textInputRef.current.value = '';
   }
 
   const formFocusedHandler = () => {
