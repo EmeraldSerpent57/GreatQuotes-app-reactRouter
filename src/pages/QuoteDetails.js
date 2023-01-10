@@ -60,7 +60,7 @@ const QuoteDetails = () => {
       <title>View Quote and Comments</title>
       <meta name="description" content="View selected quote, add and view comments" />
     </Helmet>
-      <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} />
+      <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} submitter={loadedQuote.submitter} />
       <Route path={match.path} exact>
         <div className="centered">
           <Link className="btn--flat" to={`${match.url}/comments`}>

@@ -3,7 +3,7 @@
   color: white;
   border-radius: 6px;
   padding: 3rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
   width: 90%;
   max-width: 40rem;
 }
@@ -17,4 +17,23 @@
   font-size: 1.5rem;
   text-align: right;
   color: #a1e0e0;
+}
+
+.divider {
+  background-color: #080808;
+  padding: 1px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10px;
+  width: 90%;
+}
+
+.submitted figcaption {
+  color: #080808;
+  font-size: 16px;
+  text-align: left;
+  margin-left: -5px;
+  display: inline-block;
+  font-weight: 300;
 }

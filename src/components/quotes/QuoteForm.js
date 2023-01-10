@@ -9,19 +9,22 @@ const QuoteForm = (props) => {
   const [isEntering, setIsEntering] = useState(false);
   const authorInputRef = useRef();
   const textInputRef = useRef();
+  const submittedByInputRef = useRef();
 
   function submitFormHandler(event) {
     event.preventDefault();
 
     const enteredAuthor = authorInputRef.current.value;
     const enteredText = textInputRef.current.value;
+    const submittedBy = submittedByInputRef.current.value;
     // optional: Could validate here
 
-    props.onAddQuote({ author: enteredAuthor, text: enteredText });
+    props.onAddQuote({ author: enteredAuthor, text: enteredText, submitter: submittedBy });
 
     //clear form after submission
     authorInputRef.current.value = '';
     textInputRef.current.value = '';
+    submittedBy.current.value = '';
   }
 
   const formFocusedHandler = () => {
@@ -59,6 +62,10 @@ const QuoteForm = (props) => {
           <div className={classes.control}>
             <label htmlFor="text">Text</label>
             <textarea id="text" rows="5" ref={textInputRef}></textarea>
+          </div>
+          <div className={classes.control}>
+            <label htmlFor="submitter">Submitted By (can enter a unique username)</label>
+            <input type="text" id="submitter" ref={submittedByInputRef} />
           </div>
           <div className={classes.actions}>
             <button onClick={finishedEnteringHandler} className="btn">
