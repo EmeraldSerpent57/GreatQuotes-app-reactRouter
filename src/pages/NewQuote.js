@@ -1,35 +1,63 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { useHistory } from "react-router-dom";
+import { useHistory, /*Route*/ } from "react-router-dom";
 
 import QuoteForm from "../components/quotes/QuoteForm";
 import useHttp from "../hooks/use-http";
 import { addQuote } from "../lib/api";
+//import AllQuotes from "./AllQuotes";
+import AddCommentModal from "../components/UI/AddCommentModal";
+
+
 
 const NewQuote = () => {
   const { sendRequest, status } = useHttp(addQuote);
   const history = useHistory();
+  const [showModal, setShowModal] = useState();
 
   useEffect(() => {
     if (status === "completed") {
-      history.push("/quotes");
+      setShowModal({
+        title: "Your quote has been added",
+        message: "Thank you for your contribution!",
+      });
+      
     }
-  }, [status, history]);
+  }, [status]);
 
   const addQuoteHandler = (quoteData) => {
     sendRequest(quoteData);
   };
 
+  const commentConfirmHandler = () => {
+    history.push("/quotes");
+    /*return (
+      <Route>
+        <AllQuotes path="/quotes" exact />
+      </Route>
+    ); */
+  };
+
   return (
     <>
-    <Helmet>
-      <title>Add a New Quote</title>
-      <meta name="description" content="Add a new funny, serious, or thought-provoking quote to the page" />
-    </Helmet>
+      <Helmet>
+        <title>Add a New Quote</title>
+        <meta
+          name="description"
+          content="Add a new funny, serious, or thought-provoking quote to the page"
+        />
+      </Helmet>
       <QuoteForm
         isLoading={status === "pending"}
         onAddQuote={addQuoteHandler}
       />
+      {showModal && (
+        <AddCommentModal
+          title={showModal.title}
+          message={showModal.message}
+          onConfirm={commentConfirmHandler}
+        />
+      )}
     </>
   );
 };
