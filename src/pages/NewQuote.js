@@ -6,7 +6,7 @@ import QuoteForm from "../components/quotes/QuoteForm";
 import useHttp from "../hooks/use-http";
 import { addQuote } from "../lib/api";
 //import AllQuotes from "./AllQuotes";
-import AddCommentModal from "../components/UI/AddCommentModal";
+import Modal from "../components/UI/Modal";
 
 
 
@@ -52,7 +52,7 @@ const NewQuote = () => {
         onAddQuote={addQuoteHandler}
       />
       {showModal && (
-        <AddCommentModal
+        <Modal
           title={showModal.title}
           message={showModal.message}
           onConfirm={commentConfirmHandler}

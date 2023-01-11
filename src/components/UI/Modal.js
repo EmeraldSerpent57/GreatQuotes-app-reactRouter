@@ -1,4 +1,4 @@
-import classes from './AddCommentModal.module.css';
+import classes from './Modal.module.css';
 import Card from './Card';
 
 function Backdrop(props) {
