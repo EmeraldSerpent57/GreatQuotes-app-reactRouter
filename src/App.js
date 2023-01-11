@@ -8,6 +8,7 @@ const NewQuote = React.lazy(() => import('./pages/NewQuote'));
 const QuoteDetails = React.lazy(() => import('./pages/QuoteDetails'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 const AllQuotes = React.lazy(() => import('./pages/AllQuotes'));
+const HomePage = React.lazy(() => import('./pages/HomePage'));
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
       >
         <Switch>
           <Route path="/" exact>
-            <Redirect to="/quotes" />
+            <Redirect to="/home" />
+          </Route>
+          <Route path='/home' exact>
+            <HomePage />
           </Route>
           <Route path="/quotes" exact>
             <AllQuotes />
