@@ -9,7 +9,7 @@
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: white;
 }
 
@@ -33,5 +33,16 @@
 .nav a:hover,
 .nav a:active,
 .nav a.active {
+  color: #e6fcfc;
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainNav a:hover,
+.mainNav a:active,
+.mainNav a.active {
   color: #e6fcfc;
 }

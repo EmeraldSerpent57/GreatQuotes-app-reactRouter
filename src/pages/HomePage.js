@@ -10,6 +10,12 @@ const HomePage = () => {
             <div>
                 <h1>Welcome to Great Quotes!</h1>
             </div>
+            <div>
+                <p>
+                    Text about what this website does and how to interact with it.
+                </p>
+            </div>
+            <button className="btn">Take me to the quotes!</button>
         </>
     );
 }

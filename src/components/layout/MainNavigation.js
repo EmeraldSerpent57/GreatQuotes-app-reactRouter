@@ -5,7 +5,10 @@ import classes from "./MainNavigation.module.css";
 const MainNavigation = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Great Quotes</div>
+      <nav className={classes.mainNav}>
+        <NavLink to="/home" className={classes.logo}>Great Quotes</NavLink>
+      </nav>
+      
       <nav className={classes.nav}>
         <ul>
           <li>
