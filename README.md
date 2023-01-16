@@ -2,14 +2,11 @@
 
 ### Things I would like to add to this app:
 1. Cleaner homepage where you will click a link to see all the quotes, instead of them being displayed right away
-  - "Great Quotes" Header at top of page will be clickable to go back to main homepage
-  - add metadata to this!
+  - work on styling 
+  - connect button to all quotes page 
   
 2. show modal after quote is added 
   -need to work on styling!
-  
-4. Uploaded by info will be shown on a seperate page with a link to access at the bottom of page
-  - small link at bottom right of page that says "Quotes contributed by"
   
 6. Sort feature to add a alphabetically option
   - make sorting option a drop down
