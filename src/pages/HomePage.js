@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Helmet } from "react-helmet";
 import classes from './HomePage.modules.css';
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -21,7 +22,9 @@ const HomePage = () => {
               Text about what this website does and how to interact with it.
             </p>
           </div>
-          <button className="btn">Take me to the quotes!</button>
+          <Link className="btn" to={`/quotes`}>
+            Take me to the quotes!
+          </Link>
         </body>
       </Fragment>
     );
