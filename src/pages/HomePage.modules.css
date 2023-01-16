@@ -1,0 +1,7 @@
+.hpBackground {
+  background-image: url(https://images.thdstatic.com/productImages/f922bce2-1dd9-47d8-9280-fb26b73bbebc/svn/magnolia-home-by-joanna-gaines-wallpaper-rolls-mh1612-64_145.jpg);
+  opacity: 0.5;
+  width: 5000px;
+  height: 10000px;
+  object-fit: cover;
+}
