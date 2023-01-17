@@ -57,7 +57,7 @@ const QuoteDetails = () => {
   return (
     <>
     <Helmet>
-      <title>View Quote and Comments</title>
+      <title>View Comments and Details</title>
       <meta name="description" content="View selected quote, add and view comments" />
     </Helmet>
       <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} submitter={loadedQuote.submitter} />
