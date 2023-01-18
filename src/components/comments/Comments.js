@@ -36,7 +36,7 @@ const Comments = () => {
         <LoadingSpinner />
       </div>
     );
-  }
+  } 
 
   if (status === "completed" && loadedComments && loadedComments.length > 0) {
     comments = <CommentsList comments={loadedComments} />;

@@ -24,8 +24,7 @@ function ModalOverlay(props) {
 function AddCommentModal(props) {
   return (
     <>
-        <Backdrop onConfirm={props.onConfirm} />,
-
+        <Backdrop onConfirm={props.onConfirm} />
         <ModalOverlay
           title={props.title}
           message={props.message}
