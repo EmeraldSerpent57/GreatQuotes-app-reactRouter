@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { useHistory, /*Route*/ } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import QuoteForm from "../components/quotes/QuoteForm";
 import useHttp from "../hooks/use-http";
 import { addQuote } from "../lib/api";
-//import AllQuotes from "./AllQuotes";
 import Modal from "../components/UI/Modal";
 
 
@@ -31,11 +30,6 @@ const NewQuote = () => {
 
   const commentConfirmHandler = () => {
     history.push("/quotes");
-    /*return (
-      <Route>
-        <AllQuotes path="/quotes" exact />
-      </Route>
-    ); */
   };
 
   return (

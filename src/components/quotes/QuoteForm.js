@@ -24,7 +24,7 @@ const QuoteForm = (props) => {
     //clear form after submission
     authorInputRef.current.value = '';
     textInputRef.current.value = '';
-    submittedBy.current.value = '';
+    submittedByInputRef.current.value = '';
   }
 
   const formFocusedHandler = () => {
