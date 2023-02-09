@@ -1,6 +1,8 @@
 import { Fragment, useRef, useState } from "react";
 import { Prompt } from "react-router-dom";
+import { Link } from "react-router-dom";
 
+import { BsArrowLeft } from "react-icons/bs";
 import Card from "../UI/Card";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import classes from "./QuoteForm.module.css";
@@ -68,6 +70,9 @@ const QuoteForm = (props) => {
           "Are you sure you want to leave? All changes will be lost!"
         }
       />
+      <Link className={classes.backbtn} to="/quotes">
+        <BsArrowLeft />
+      </Link>
       <Card>
         <form
           onFocus={formFocusedHandler}
@@ -86,7 +91,9 @@ const QuoteForm = (props) => {
           >
             <label htmlFor="author">Author</label>
             <input type="text" id="author" ref={authorInputRef} />
-            {!formValidity.author && <p className={classes.errorText}>Field must not be empty.</p>}
+            {!formValidity.author && (
+              <p className={classes.errorText}>Field must not be empty.</p>
+            )}
           </div>
           <div
             className={`${classes.control} ${
@@ -95,7 +102,9 @@ const QuoteForm = (props) => {
           >
             <label htmlFor="text">Text</label>
             <textarea id="text" rows="5" ref={textInputRef}></textarea>
-            {!formValidity.text && <p className={classes.errorText}>Field must not be empty.</p>}
+            {!formValidity.text && (
+              <p className={classes.errorText}>Field must not be empty.</p>
+            )}
           </div>
           <div
             className={`${classes.control} ${
@@ -106,7 +115,9 @@ const QuoteForm = (props) => {
               Submitted By (can enter a unique username)
             </label>
             <input type="text" id="submitter" ref={submittedByInputRef} />
-            {!formValidity.submitter && <p className={classes.errorText}>Field must not be empty.</p>}
+            {!formValidity.submitter && (
+              <p className={classes.errorText}>Field must not be empty.</p>
+            )}
           </div>
           <div className={classes.actions}>
             <button onClick={finishedEnteringHandler} className="btn">

@@ -37,3 +37,15 @@
   display: inline-block;
   font-weight: 300;
 }
+
+.backbtn {
+  color: teal;
+  cursor: pointer;
+  position: relative;
+  left: -22rem;
+}
+
+.backbtn:hover,
+.backbtn:active {
+  color: black;
+}

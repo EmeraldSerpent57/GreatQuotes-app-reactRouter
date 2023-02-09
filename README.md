@@ -3,7 +3,6 @@
 ### Things I would like to add to this app:
 1. add media queries!
 2. validation for comments
-3. back button on comment details page
 
 Deploy this app for production (https://multipage-quote-app-fdaaa.web.app)
 
@@ -13,3 +12,5 @@ Deploy this app for production (https://multipage-quote-app-fdaaa.web.app)
 - FireBase
 - Jest
 - NodeJS
+- react-icons
+
