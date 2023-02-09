@@ -2,7 +2,8 @@
 
 ### Things I would like to add to this app:
 1. add media queries!
-2. fix blank quotes being submitted
+2. validation for comments
+3. back button on comment details page
 
 Deploy this app for production (https://multipage-quote-app-fdaaa.web.app)
 
