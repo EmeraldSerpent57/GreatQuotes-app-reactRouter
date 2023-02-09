@@ -4,8 +4,7 @@
 
 2. show modal after quote is added 
   -need to work on styling!
-
-9. comments should automatically load when you go to the "view fullscreen page", get rid of "load comments" button 
+3. add media queries!
 
 Deploy this app for production (https://multipage-quote-app-fdaaa.web.app)
 
