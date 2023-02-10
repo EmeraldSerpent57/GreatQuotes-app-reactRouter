@@ -31,9 +31,8 @@
 
 .submitted figcaption {
   color: #080808;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
-  margin-left: -5px;
   display: inline-block;
   font-weight: 300;
 }
@@ -41,11 +40,53 @@
 .backbtn {
   color: teal;
   cursor: pointer;
-  position: relative;
-  left: -22rem;
+  margin-left: -10rem;
 }
 
 .backbtn:hover,
 .backbtn:active {
   color: black;
 }
+
+@media screen and (max-width: 1080px) {
+  .backbtn {
+    margin-left: -2rem;
+  }
+  .quote {
+    padding: 1rem;
+    max-width: 40rem;
+  }
+  .quote p {
+    font-size: 1.8rem;
+  }
+  .quote figcaption {
+    font-size: 1.1rem;
+  }
+  .submitted figcaption {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .backbtn {
+    margin-left: 0rem;
+  }
+  .quote {
+    padding: 1rem;
+    max-width: 30rem;
+  }
+  .quote p {
+    font-size: 1.8rem;
+  }
+  .quote figcaption {
+    font-size: 1.1rem;
+  }
+  .divider{
+    max-width: 89%;
+  }
+  .submitted figcaption {
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  }
+}
+

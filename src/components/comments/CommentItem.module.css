@@ -5,3 +5,10 @@
   padding-bottom: 0.5rem;
   border-bottom: 2px solid teal;;
 }
+
+@media screen and (max-width: 960px) {
+  .item {
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+  }
+}

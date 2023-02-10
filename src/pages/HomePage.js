@@ -13,7 +13,7 @@ const HomePage = () => {
             content="A website where you can view and add quotes that you love"
           />
         </Helmet>
-        <body>
+        <body className={classes.body}>
           <div className={classes.title}>
             <h1>Welcome to Great Quotes!</h1>
           </div>

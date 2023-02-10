@@ -66,12 +66,23 @@
 .backbtn {
   color: teal;
   cursor: pointer;
-  position: relative;
-  left: -22rem;
+  margin-left: -10rem;
 }
 
 .backbtn:hover,
 .backbtn:active {
   color: black;
+}
+
+@media screen and (max-width: 1080px) {
+  .backbtn {
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .backbtn {
+    margin-left: 0rem;
+  }
 }
 

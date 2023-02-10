@@ -54,3 +54,14 @@ body {
   background-color: teal;
   color: white;
 }
+
+@media screen and (max-width: 1080px) {
+  
+}
+
+@media screen and (max-width: 960px) {
+  .btn {
+    padding: 0.40rem 0.9rem;
+    font-size: 14px;
+  }
+}

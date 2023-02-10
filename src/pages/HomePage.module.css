@@ -54,7 +54,6 @@
 }
 
 .webBtn {
-  position: relative;
   text-decoration: none;
   background-color: white;
   color: teal;
@@ -79,9 +78,9 @@
   padding: 0.75rem 1.5rem;
   border: 1px solid teal;
   cursor: pointer;
-  position: fixed;
-  top: 27rem;
-  right: 20rem;
+  position: relative;
+  top: 6rem;
+  right: 12rem;
 }
 
 .button1:hover,
@@ -98,9 +97,9 @@
   padding: 0.75rem 1.5rem;
   border: 1px solid teal;
   cursor: pointer;
-  position: fixed;
-  top: 45rem;
-  left: 20rem;
+  position: relative;
+  top: -30rem;
+  left: 40rem;
 }
 
 .button2:hover,
@@ -115,4 +114,7 @@
   right: 1rem;
   font-size: x-small;
 }
+
+
+
 
