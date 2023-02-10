@@ -1,11 +1,15 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 import classes from "./NewCommentForm.module.css";
 import useHttp from "../../hooks/use-http";
 import { addComment } from "../../lib/api";
 import LoadingSpinner from "../UI/LoadingSpinner";
 
+const isEmpty = (value) => value.trim() === "";
+
 const NewCommentForm = (props) => {
+  const [inputValidity, setInputValidity] = useState(true);
+
   const commentTextRef = useRef();
 
   const { sendRequest, status, error } = useHttp(addComment);
@@ -23,7 +27,17 @@ const NewCommentForm = (props) => {
 
     const enteredText = commentTextRef.current.value;
 
-    // optional: Could validate here
+    //validating input here
+    const commentIsValid = !isEmpty(enteredText);
+
+    setInputValidity({
+      text: commentIsValid,
+    });
+
+    if (!commentIsValid) {
+      return;
+    }
+
     sendRequest({ commentData: { text: enteredText }, quoteId: props.quoteId });
     
     //clear form after submission
@@ -37,9 +51,10 @@ const NewCommentForm = (props) => {
           <LoadingSpinner />
         </div>
       )}
-      <div className={classes.control} onSubmit={submitFormHandler}>
-        <label htmlFor="comment">Your Comment</label>
+      <div className={`${classes.control} ${inputValidity.text ? "" : classes.invalid}`} onSubmit={submitFormHandler}>
+        <label htmlFor="comment">Your Comment:</label>
         <textarea id="comment" rows="5" ref={commentTextRef}></textarea>
+        {!inputValidity.text && (<p className={classes.errorText}>Please enter a comment.</p>)}
       </div>
       <div className={classes.actions}>
         <button className="btn">Add Comment</button>

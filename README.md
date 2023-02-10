@@ -1,7 +1,7 @@
 # Multipage Quote App with React Router v5
 
 ### Things I would like to add to this app:
-1. add media queries!
+1. add media queries! items not resizing when browser resizes
 2. validation for comments
 
 Deploy this app for production (https://multipage-quote-app-fdaaa.web.app)
