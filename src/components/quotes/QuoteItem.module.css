@@ -36,7 +36,7 @@
   color: #566d6d;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
   .item blockquote {
     font-size: 1.2rem;
   }

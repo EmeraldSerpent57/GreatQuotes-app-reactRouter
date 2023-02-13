@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px), (max-width: 480px) {
   .backbtn {
     margin-left: 0rem;
   }
