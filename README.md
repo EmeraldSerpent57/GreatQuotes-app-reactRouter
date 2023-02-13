@@ -12,4 +12,4 @@ This web app is a place where lovers of great quotes can view quotes submitted b
 - Vercel - deployment
 
 ## Launch
-Visit this site: (great-quotes-app-react-router.vercel.app)
+Visit this site: ([GreatQuotes] (great-quotes-app-react-router-ob62wk3i7-emeraldserpent57.vercel.app))
