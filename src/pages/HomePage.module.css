@@ -6,11 +6,11 @@ body {
 .title h1 { 
   text-align: center;
   font-size: 4.5rem;
-  color: #065454;
+  color: #033030;
 }
 
 .description1 {
-  background-color: teal;
+  background-color: #009191;
   border: 3px solid black;
   border-radius: 4px;
   padding: 1rem;
@@ -38,7 +38,7 @@ body {
 }
 
 .description2 {
-  background-color: teal;
+  background-color: #009191;
   border: 3px solid black;
   border-radius: 4px;
   padding: 1rem;
@@ -77,11 +77,11 @@ body {
 
 .button1 {
   text-decoration: none;
-  background-color: teal;
+  background-color: #007070;
   color: white;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
-  border: 1px solid teal;
+  border: 1px solid #007070;
   cursor: pointer;
   position: relative;
   top: 6rem;
@@ -96,11 +96,11 @@ body {
 
 .button2 {
   text-decoration: none;
-  background-color: teal;
+  background-color: #007070;
   color: white;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
-  border: 1px solid teal;
+  border: 1px solid #007070;
   cursor: pointer;
   position: relative;
   top: -30rem;
