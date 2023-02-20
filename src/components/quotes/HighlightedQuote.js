@@ -9,7 +9,7 @@ const HighlightedQuote = (props) => {
         <BsArrowLeft />
       </Link>
       <figure className={classes.quote}>
-        <p>{props.text}</p>
+        <p>"{props.text}"</p>
         <figcaption>{props.author}</figcaption>
       </figure>
       <div className={classes.divider}></div>
