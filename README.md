@@ -5,7 +5,7 @@ This web app is a place where lovers of great quotes can view quotes submitted b
 
 ## Technologies 
 - React Router v5
-- FireBase - API
+- FireBase - database
 - Jest - testing
 - react-icons for back button icon
 - React Helmet for managing my document head
